@@ -9,9 +9,39 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  padding: 1.5rem;
 }
 
 header, button, h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  width: 5rem;
+  height: 1.5rem;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5rem;
+  gap: 0.5rem;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #070439;
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=index.css.map */

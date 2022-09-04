@@ -16,8 +16,39 @@ $desaturated-blue: hsl(238, 22%, 44%);
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  padding: 1.5rem;
+  
 }
 
 header, button, h1, h2, h3 {
   font-family: 'Raleway', sans-serif;
 }
+
+header  {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+
+  img {
+    width: 5rem;
+    height: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    line-height: 1.5rem;
+    gap: 0.5rem;
+
+    a {
+      text-decoration: none;
+      color: $very-dark-blue;
+      font-size: 0.75rem;
+    }
+  }
+}
+
+
+
+
+
