@@ -11,6 +11,15 @@ body {
   font-size: 16px;
 }
 
+small {
+  opacity: 0;
+  color: red;
+}
+
+input:invalid small {
+  opacity: 1;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,6 +153,15 @@ section:nth-of-type(2) .see-how-container a {
 
 section:nth-of-type(2) .see-how-container a img {
   vertical-align: bottom;
+}
+
+section:nth-of-type(2) .see-how-container:hover {
+  border-bottom-color: #71DFCC;
+  cursor: pointer;
+}
+
+section:nth-of-type(2) .see-how-container:hover a {
+  color: #71DFCC;
 }
 
 section:nth-of-type(2) .card {
@@ -420,6 +438,13 @@ footer .social-media > div {
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  footer a:hover, footer .social-media > div:hover i {
+    color: #6b9aff;
+  }
+  footer .social-media > div:hover {
+    border-color: #6b9aff;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=index.css.map */

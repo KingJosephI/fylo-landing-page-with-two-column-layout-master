@@ -17,8 +17,19 @@ $light-blue: hsl(221, 100%, 71%);
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+ 
 }
 
+small{
+  // display: none;
+opacity: 0;
+  color:red
+}
+
+input:invalid small{
+  // display: block;
+  opacity: 1;
+}
 
 header  {
   display: flex;
@@ -139,12 +150,22 @@ section:nth-of-type(2){
       color: $moderate-cyan;
       font-size: 0.75rem;
     
+      // &:hover {
+      //   color: #71DFCC;
+      // }
       img{
         vertical-align: bottom;
       }
     
     }
 
+    &:hover {
+      border-bottom-color: #71DFCC;
+      cursor: pointer;
+    }
+    &:hover a{
+      color: #71DFCC;
+    }
 
   }
 
@@ -388,21 +409,18 @@ footer {
     }
 
     form {
-
       input {
         width: 30rem;
         border-radius: .3rem;
         border: none;
       }
-  
-     button {
-      width: 12.5rem;
-    }
-
-    button:hover {
-      cursor: pointer;
-      background-color: $light-blue;
-    }
+      button {
+        width: 12.5rem;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: $light-blue;
+      }
     }
   
   }
@@ -413,6 +431,15 @@ footer {
     .links{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+    }
+
+    a:hover, .social-media > div:hover i  {
+      color: $light-blue;
+    }
+
+    .social-media > div:hover{
+      border-color: $light-blue;
+      cursor: pointer;
     }
   }
   
