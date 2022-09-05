@@ -343,6 +343,10 @@ footer .social-media > div {
   .hero form button {
     width: 12.5rem;
   }
+  .hero form button:hover {
+    cursor: pointer;
+    background-color: #6b9aff;
+  }
   section:nth-of-type(2) {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -403,6 +407,19 @@ footer .social-media > div {
   }
   section.sign-up form button {
     width: 12.5rem;
+  }
+  section.sign-up form button:hover {
+    cursor: pointer;
+    background-color: #6b9aff;
+  }
+  footer {
+    padding: 3rem 5rem;
+  }
+  footer .links {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=index.css.map */
