@@ -276,4 +276,22 @@ footer .social-media > div {
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (min-width: 48em) {
+  header {
+    padding-top: 4.125rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  header img {
+    width: 10.375rem;
+    height: 3.0625rem;
+  }
+  header ul {
+    gap: 3.5rem;
+  }
+  header ul a {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=index.css.map */

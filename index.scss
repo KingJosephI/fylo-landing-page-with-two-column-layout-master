@@ -16,18 +16,8 @@ $desaturated-blue: hsl(238, 22%, 44%);
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  // padding: 1.5rem;
-  
 }
 
-// body > * {
-//   padding-left: 1.5rem;
-//   padding-right: 1.5rem;
-// }
-
-// main {
-//   background-color: yellow;
-// }
 
 header  {
   display: flex;
@@ -205,7 +195,6 @@ section.sign-up {
   background-color: $desaturated-blue;
   width: 100%;
   padding: 3rem 1.5rem ;
-  // padding-right: 1.5rem;
   color: $light-grayish-blue;
   text-align: center;
 
@@ -238,8 +227,7 @@ section.sign-up {
 footer {
   background-color: $very-dark-blue;
   padding: 3rem 1.5rem;
-  // color:  $light-grayish-blue;
-
+  
   i, a{
     color: $light-grayish-blue;
   }
@@ -275,7 +263,36 @@ footer {
     align-items: center;
   }
 
-  // .links {
-  //   display: flex;
-  // }
+}
+
+
+@media screen and (min-width: 48em) {
+  header  {
+    // display: flex;
+    // justify-content: space-between;
+    padding-top: 4.125rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+    img {
+      // width: 5rem;
+      // height: 1.5rem;
+      width: 10.375rem;
+      height: 3.0625rem;
+    }
+  
+    ul {
+      // list-style: none;
+      // display: flex;
+      // line-height: 1.5rem;
+      gap: 3.5rem;
+  
+      a {
+        // text-decoration: none;
+        // color: $very-dark-blue;
+        font-size: 1rem;
+      }
+    }
+  }
+  
 }
