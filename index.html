@@ -44,13 +44,8 @@
               family, and co-workers.
             </p>
           </div>
-          <form>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-            />
+          <form onsubmit="event.preventDefault()">
+            <input type="email" name="email" placeholder="Enter your email" />
             <button
               type="submit"
               onclick="validateEmail(document.forms[0].email)"
@@ -163,8 +158,8 @@
       // alert('Joseph Madras');
       const errorMessage = document.querySelector('#error');
       errorMessage.style.color = 'red';
-      // errorMessage.style.display = 'none';
-      errorMessage.style.opacity = 0;
+      errorMessage.style.display = 'none';
+      // errorMessage.style.none = 0;
 
       const input = document.querySelector('.hero input');
 
@@ -176,13 +171,18 @@
           return true;
         } else {
           input.style.borderColor = 'red';
-          // errorMessage.style.display = 'block';
-          errorMessage.style.opacity = 1;
+          errorMessage.style.display = 'block';
+          // errorMessage.style.opacity = 1;
 
           // alert('You have entered an invalid email address!');
           // document.form1.text1.focus();
           return false;
         }
+      }
+
+      function submit(event) {
+        event.preventDefault();
+        validateEmail(document.forms[0].email);
       }
     </script>
   </body>

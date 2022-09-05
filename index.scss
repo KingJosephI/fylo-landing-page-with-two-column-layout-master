@@ -20,16 +20,6 @@ body {
  
 }
 
-small{
-  // display: none;
-opacity: 0;
-  color:red
-}
-
-input:invalid small{
-  // display: block;
-  opacity: 1;
-}
 
 header  {
   display: flex;
