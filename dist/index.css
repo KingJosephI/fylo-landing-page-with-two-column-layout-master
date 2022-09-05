@@ -97,6 +97,11 @@ header ul a {
   border-radius: 0.2rem;
 }
 
+.hero form #error {
+  width: 100%;
+  text-align: left;
+}
+
 section:nth-of-type(2) {
   text-align: center;
   background-image: url("./images/bg-curve-mobile.svg");
@@ -345,6 +350,8 @@ footer .social-media > div {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .hero form input {
     width: 20rem;

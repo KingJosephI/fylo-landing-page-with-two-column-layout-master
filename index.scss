@@ -93,6 +93,11 @@ header  {
       font-size: 0.875rem;
       border-radius: 0.2rem;
     }
+
+    #error {
+      width: 100%;
+      text-align: left;
+    }
   }
 
  
@@ -329,6 +334,7 @@ footer {
     form {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
   
       input  {
         width: 20rem;
