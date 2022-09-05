@@ -17,17 +17,17 @@ $light-blue: hsl(221, 100%, 71%);
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
- 
+
 }
 
 
-header  {
+header {
   display: flex;
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  
+
   img {
     width: 5rem;
     height: 1.5rem;
@@ -78,14 +78,14 @@ header  {
     flex-direction: column;
     gap: 1rem;
     padding-top: 2rem;
-  
-    & > * {
-      display: block ;
+
+    &>* {
+      display: block;
       width: 100%;
       padding: .6rem;
     }
 
-   button {
+    button {
       background-color: $bright-blue;
       border: none;
       color: $light-grayish-blue;
@@ -100,17 +100,17 @@ header  {
     }
   }
 
- 
+
 }
 
-section:nth-of-type(2){
+section:nth-of-type(2) {
   text-align: center;
   background-image: url("./images/bg-curve-mobile.svg");
   background-repeat: no-repeat;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 
-  .image-container img{
+  .image-container img {
     width: 100%;
   }
 
@@ -121,7 +121,8 @@ section:nth-of-type(2){
     color: $very-dark-blue;
   }
 
-  .info_p1, .info_p2 {
+  .info_p1,
+  .info_p2 {
     color: $desaturated-blue;
     font-size: 0.875rem;
     line-height: 1.3125rem;
@@ -139,26 +140,24 @@ section:nth-of-type(2){
     padding-bottom: .5rem;
     display: inline-block;
     border-bottom: 1px solid $moderate-cyan;
-    
+
     a {
       text-decoration: none;
       color: $moderate-cyan;
       font-size: 0.75rem;
-    
-      // &:hover {
-      //   color: #71DFCC;
-      // }
-      img{
+
+      img {
         vertical-align: bottom;
       }
-    
+
     }
 
     &:hover {
       border-bottom-color: #71DFCC;
       cursor: pointer;
     }
-    &:hover a{
+
+    &:hover a {
       color: #71DFCC;
     }
 
@@ -171,7 +170,7 @@ section:nth-of-type(2){
     margin: 0 auto;
     padding: 1rem;
     border-radius: .3rem;
-    margin: 2.5rem  auto 5.125rem auto;
+    margin: 2.5rem auto 5.125rem auto;
 
     p {
       font-size: 0.625rem;
@@ -180,36 +179,34 @@ section:nth-of-type(2){
       padding-bottom: 0.75rem;
     }
 
-  .profile {
-    display: flex; 
-    gap: 1rem;
-    
-    img {
-      width: 1.5rem;
-      height: 1.5rem;
-      border-radius: 50%;
+    .profile {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-size: 0.5625rem;
+        font-weight: 700;
+        margin-bottom: -0.625rem;
+      }
+
+      .position {
+        font-size: 0.375rem;
+      }
     }
-
-  .name {
-    font-size: 0.5625rem;
-    font-weight: 700;
-    margin-bottom: -0.625rem;
   }
-
-  .position {
-    font-size: 0.375rem;
-  }
-
-  }
-
-}
 
 }
 
 section.sign-up {
   background-color: $desaturated-blue;
   width: 100%;
-  padding: 3rem 1.5rem ;
+  padding: 3rem 1.5rem;
   color: $light-grayish-blue;
   text-align: center;
 
@@ -218,14 +215,14 @@ section.sign-up {
     flex-direction: column;
     gap: 1rem;
     padding-top: 2rem;
-  
-    & > * {
-      display: block ;
+
+    &>* {
+      display: block;
       width: 100%;
       padding: .6rem;
     }
 
-   button {
+    button {
       background-color: $bright-blue;
       border: none;
       color: $light-grayish-blue;
@@ -240,8 +237,9 @@ section.sign-up {
 footer {
   background-color: $very-dark-blue;
   padding: 3rem 1.5rem;
-  
-  i, a{
+
+  i,
+  a {
     color: $light-grayish-blue;
   }
 
@@ -249,24 +247,25 @@ footer {
     text-decoration: none;
   }
 
-  .links{
+  .links {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-top: 2rem;
   }
 
-  .links > div:first-child > *, li {
+  .links>div:first-child>*,
+  li {
     padding-bottom: .6rem;
   }
 
-  .social-media{
+  .social-media {
     display: flex;
     justify-content: center;
     gap: 1.3rem;
   }
 
-  .social-media > div {
+  .social-media>div {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -280,25 +279,25 @@ footer {
 
 
 @media screen and (min-width: 64em) {
-  header  {
+  header {
     padding-top: 4.125rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    
+
     img {
       width: 10.375rem;
       height: 3.0625rem;
     }
-  
+
     ul {
       gap: 3.5rem;
-  
+
       a {
         font-size: 1rem;
       }
     }
   }
-  
+
   .hero {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -306,40 +305,40 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    & > div:first-child{
+    &>div:first-child {
       order: 2;
-     }
+    }
 
-    & > div:nth-child(2){
-      order: 1; 
+    &>div:nth-child(2) {
+      order: 1;
       max-width: 39.19rem;
     }
-  
+
     img {
-       width: 40rem;
+      width: 40rem;
     }
-  
+
     h1 {
       font-size: 2.5rem;
       line-height: 3.75rem;
       font-family: 'Raleway', sans-serif;
     }
-  
+
     p {
       font-size: 1.0625rem;
       line-height: 1.5rem;
       padding-left: 0;
     }
-  
+
     form {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-  
-      input  {
+
+      input {
         width: 20rem;
       }
-   
+
       button {
         width: 12.5rem;
       }
@@ -349,11 +348,11 @@ footer {
         background-color: $light-blue;
       }
     }
-  
-   
+
+
   }
 
-  section:nth-of-type(2){
+  section:nth-of-type(2) {
     padding-left: 5rem;
     padding-right: 5rem;
     display: flex;
@@ -361,45 +360,45 @@ footer {
     justify-content: space-between;
     background-image: url('./images/rectangle-desktop.png');
 
-    & > div:first-child{
+    &>div:first-child {
       order: 2;
       padding-top: 7rem;
     }
-    
-    & > div:nth-child(2){
+
+    &>div:nth-child(2) {
       order: 1;
       max-width: 43rem;
     }
-    
-    .image-container img{
+
+    .image-container img {
       width: 33.88rem;
     }
-  
+
     h2 {
       font-size: 2.5rem;
     }
-  
+
     .info_p2 {
       padding-bottom: 1rem;
     }
-  
+
     .card {
       margin-left: 0;
     }
-  
+
   }
-  
+
   section.sign-up {
-    padding: 3rem 5rem ;
+    padding: 3rem 5rem;
     text-align: left;
     display: flex;
     justify-content: space-between;
-  
-    & > div {
+
+    &>div {
       max-width: 33.3125rem;
     }
 
-    p{
+    p {
       margin-top: 2.0625rem;
       line-height: 1.5rem;
     }
@@ -410,33 +409,36 @@ footer {
         border-radius: .3rem;
         border: none;
       }
+
       button {
         width: 12.5rem;
       }
+
       button:hover {
         cursor: pointer;
         background-color: $light-blue;
       }
     }
-  
+
   }
- 
+
   footer {
     padding: 3rem 5rem;
- 
-    .links{
+
+    .links {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
     }
 
-    a:hover, .social-media > div:hover i  {
+    a:hover,
+    .social-media>div:hover i {
       color: $light-blue;
     }
 
-    .social-media > div:hover{
+    .social-media>div:hover {
       border-color: $light-blue;
       cursor: pointer;
     }
   }
-  
+
 }

@@ -155,29 +155,19 @@
     </footer>
 
     <script defer>
-      // alert('Joseph Madras');
       const errorMessage = document.querySelector('#error');
       errorMessage.style.color = 'red';
       errorMessage.style.display = 'none';
-      // errorMessage.style.none = 0;
 
       const input = document.querySelector('.hero input');
 
       function validateEmail(inputText) {
         var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if (input.value.match(mailformat)) {
-          // alert('Valid email address!');
-          // document.form1.text1.focus();
-          return true;
-        } else {
+        if (!input.value.match(mailformat)) {
           input.style.borderColor = 'red';
           errorMessage.style.display = 'block';
-          // errorMessage.style.opacity = 1;
-
-          // alert('You have entered an invalid email address!');
-          // document.form1.text1.focus();
-          return false;
-        }
+          return true;
+        } 
       }
 
       function submit(event) {
