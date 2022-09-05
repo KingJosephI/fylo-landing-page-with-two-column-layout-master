@@ -277,7 +277,7 @@ footer .social-media > div {
           align-items: center;
 }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 64em) {
   header {
     padding-top: 4.125rem;
     padding-left: 5rem;
@@ -292,6 +292,72 @@ footer .social-media > div {
   }
   header ul a {
     font-size: 1rem;
+  }
+  .hero {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+  }
+  .hero > div:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .hero > div:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 39.19rem;
+  }
+  .hero img {
+    width: 40rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    font-family: 'Raleway', sans-serif;
+  }
+  .hero p {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    padding-left: 0;
+  }
+  .hero form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero form input {
+    width: 20rem;
+  }
+  .hero form button {
+    width: 12.5rem;
+  }
+  section:nth-of-type(2) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  section:nth-of-type(2) > div:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section:nth-of-type(2) > div:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /*# sourceMappingURL=index.css.map */
